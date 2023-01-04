@@ -1,5 +1,6 @@
 :root {
     --color-primary-dark-cyan: hsl(158, 36%, 37%);
+    --color-primary-very-dark-cyan: hsl(158, 36%, 18%);
     --color-primary-cream: hsl(30, 38%, 92%);
 
     --color-very-dark-blue: hsl(212, 21%, 14%);
@@ -93,6 +94,11 @@ h5 {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.card-right button:hover {
+    background-color: var(--color-primary-very-dark-cyan);
+    cursor: pointer;
 }
 
 .price-container {
