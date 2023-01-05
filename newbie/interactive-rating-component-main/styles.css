@@ -51,7 +51,7 @@ p {
     padding: 25px;
     max-width: 400px;
     background-image: var(--color-gradient-radial-dark-blue);
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .rating-card {
