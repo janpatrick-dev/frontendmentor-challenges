@@ -10,16 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   
+  <script defer src="./script.js"></script>
+  
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
 
   <main id="main">
-    <!-- <div class="rating-card">
+    <div class="rating-card">
       <img src="./images/icon-star.svg" alt="Star icon" class="star-img">
       <h2>How did we do?</h2>
       <p>Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
+      <p class="rating-submit-error error hide">Please select a rating below before submitting.</p>
       <div class="rating-choices">
         <p class="rating-option">1</p>
         <p class="rating-option">2</p>
@@ -28,8 +31,8 @@
         <p class="rating-option">5</p>
       </div>
       <button class="submit-btn">Submit</button>
-    </div> -->
-    <div class="thankyou-card">
+    </div>
+    <div class="thankyou-card hide">
       <img src="./images/illustration-thank-you.svg" alt="Thank you image">
       <p class="thankyou-rating">You selected {rating} out of 5</p>
       <h2>Thank you!</h2>
