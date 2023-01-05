@@ -82,8 +82,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 
 .rating-card .rating-option:hover {
@@ -97,11 +95,18 @@ p {
 .rating-card .rating-option {
     width: 50px;
     height: 50px;
-    padding: 15px 15px 10px 15px;
     background-image: 
         radial-gradient(circle at top, var(--color-dark-blue), transparent),
         radial-gradient(circle at bottom, var(--color-dark-blue), transparent);
     border-radius: 50%;
+}
+
+.rating-card .star-img {
+    padding: 15px;
+}
+
+.rating-card .rating-option {
+    padding: 15px 15px 10px 15px;
 }
 
 .rating-card .submit-btn {
