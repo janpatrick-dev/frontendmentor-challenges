@@ -6,6 +6,10 @@
     --color-medium-grey: hsl(216, 12%, 54%);
     --color-dark-blue: hsl(213, 19%, 18%);
     --color-very-dark-blue: hsl(216, 12%, 8%);
+
+    --color-gradient-radial-dark-blue: 
+        radial-gradient(circle at top, var(--color-dark-blue), transparent),
+        radial-gradient(circle at bottom, var(--color-dark-blue), transparent);
 }
 
 *,
@@ -30,6 +34,7 @@ body {
 p {
     color: var(--color-light-grey);
     font-size: 15px;
+    line-height: 1.4em;
 }
 
 #main {
@@ -40,14 +45,16 @@ p {
     gap: 20px;
 }
 
-.rating-card {
+.rating-card,
+.thankyou-card {
+    margin: 20px;
     padding: 25px;
     max-width: 400px;
-    background-image: 
-        radial-gradient(circle at top, var(--color-dark-blue), transparent),
-        radial-gradient(circle at bottom, var(--color-dark-blue), transparent);
+    background-image: var(--color-gradient-radial-dark-blue);
     border-radius: 20px;
+}
 
+.rating-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -56,10 +63,6 @@ p {
 
 .rating-card > h2 {
     margin-top: 10px;
-}
-
-.rating-card > p {
-    line-height: 1.4em;
 }
 
 .rating-card > .rating-choices {
@@ -105,6 +108,28 @@ p {
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+.thankyou-card {
+    padding: 50px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.thankyou-card .thankyou-rating {
+    padding: 10px 20px;
+    color: var(--color-primary-orange);
+    background-color: var(--color-dark-blue);
+    border-radius: 20px;
+}
+
+.thankyou-card h2 {
+    margin-top: 20px;
 }
 
 
