@@ -31,17 +31,17 @@ body {
 
 .container,
 .qr-image {
-  width: 200px;
+  width: 300px;
   border-radius: 1rem;
 }
 
 .qr-title {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 .qr-description {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: var(--color-grayish-blue);
 }
 
