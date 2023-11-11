@@ -1,0 +1,49 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  height: 95vh;
+  background-color: var(--color-light-gray);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  padding: 1.2rem;
+  background-color: var(--color-white);
+  text-align: center;
+
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container,
+.qr-image {
+  width: 200px;
+  border-radius: 1rem;
+}
+
+.qr-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.qr-description {
+  font-size: 1.2rem;
+  color: var(--color-grayish-blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
