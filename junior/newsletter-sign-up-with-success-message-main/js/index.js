@@ -22,7 +22,7 @@ const successModal = () => {
   const successIcon = document.createElement('img');
   successIcon.src = "assets/images/icon-success.svg";
   successIcon.alt = "Success icon";
-  successIcon.width = "40";
+  successIcon.width = "80";
 
   const successTitle = document.createElement('h1');
   successTitle.innerText = "Thanks for subscribing!";
