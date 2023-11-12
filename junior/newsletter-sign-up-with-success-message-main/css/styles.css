@@ -42,6 +42,7 @@ body {
 h1 {
   font-size: 4rem;
   color: var(--color-neutral-dark-slate-gray);
+  line-height: 1;
 }
 
 p {
@@ -70,12 +71,15 @@ button:hover {
   transition: 0.2s all;
 }
 
+.signup,
+.success {
+  background-color: var(--color-neutral-white);
+  border-radius: 2rem;
+}
+
 .signup {
   max-width: 600px;
   padding: 1.6rem;
-  background-color: var(--color-neutral-white);
-  border-radius: 2rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +152,27 @@ button:hover {
 .form-row > input[type="email"].error {
   border-color: var(--color-error-red);
   background-color: var(--color-error-lighter-red);
+}
+
+.success {
+  max-width: 250px;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.success > img {
+  margin-bottom: 1rem;
+}
+
+.success > p > span {
+  font-weight: bold;
+}
+
+.success > button {
+  margin-top: 1rem;
 }
 
 /* Attribution */
