@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="js/index.js" type="module" defer></script>
+</head>
+<body class="h-screen bg-gray-200 flex flex-col justify-center items-center">
+
+  <main class="w-11/12 max-w-5xl px-6 py-12 sm:p-12 bg-white rounded-3xl rounded-br-10xl">
+    <form>
+      <div class="w-full max-w-sm flex justify-evenly items-center gap-4">
+        <label class="flex flex-col">
+          <input type="number" placeholder="DD" id="day" 
+            class="
+              peer w-full border-solid border-1 border-gray-200 p-3 rounded-lg appearance-none text-xl focus:outline-none focus:border-violet-500
+              invalid:border-red-400 order-2
+            "
+          >
+          <span class="peer-invalid:text-red-400 text-gray-500 uppercase tracking-widest text-xs mb-1 order-1">Day</span>
+          <p id="day-error" class="h-2 invisible peer-invalid:visible peer-invalid:text-red-400 mt-2 italic order-3">This field is required</p>
+        </label>
+      
+        <label class="flex flex-col">
+          <input type="number" placeholder="MM" id="month" 
+            class="
+              peer w-full border-solid border-1 border-gray-200 p-3 rounded-lg appearance-none text-xl focus:outline-none focus:border-violet-500
+              invalid:border-red-400 order-2
+            "
+          >
+          <span class="peer-invalid:text-red-400 text-gray-500 uppercase tracking-widest text-xs mb-1 order-1">Month</span>
+          <p id="month-error" class="h-2 invisible peer-invalid:visible peer-invalid:text-red-400 mt-2 italic order-3">This field is required</p>
+        </label>
+      
+        <label class="flex flex-col">
+          <input type="number" placeholder="YYYY" id="year" 
+            class="
+              peer w-full border-solid border-1 border-gray-200 p-3 rounded-lg appearance-none text-xl focus:outline-none focus:border-violet-500
+              invalid:border-red-400 order-2
+            "
+          >
+          <span class="peer-invalid:text-red-400 text-gray-500 uppercase tracking-widest text-xs mb-1 order-1">Year</span>
+          <p id="year-error" class="h-2 invisible peer-invalid:visible peer-invalid:text-red-400 mt-2 italic order-3">This field is required</p>
+        </label>
+      </div>
+      
+      <div class="text-center relative flex flex-col justify-center items-center sm:items-end my-8 sm:my-0">
+        <span class="block absolute top-1/2 z-0 w-full h-0.5 bg-gray-200"></span>
+        <button class="inline-block w-16 h-16 relative z-1 rounded-full bg-violet-600 hover:bg-black">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 sm:w-8 stroke-4 sm:stroke-2 rounded-full z-2" 
+            viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
+          </svg>
+        </button>
+      </div>
+  
+      
+      <div class="leading-tight">
+        <p id="year-count" class="text-5.25xl sm:text-7xl font-extrabold"><i><span class="text-violet-600">--</span> years</i></p>
+        <p id="month-count" class="text-5.25xl sm:text-7xl font-extrabold"><i><span class="text-violet-600">--</span> months</i></p>
+        <p id="day-count" class="text-5.25xl sm:text-7xl font-extrabold"><i><span class="text-violet-600">--</span> days</i></p>
+      </div>
+    </form>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/janpatrick-dev">Jan Patrick Palacio</a>.
+  </div>
+</body>
+</html>
