@@ -6,7 +6,7 @@ const dayError = document.getElementById("day-error")
 const monthError = document.getElementById("month-error")
 const yearError = document.getElementById("year-error")
 
-const calculateButton = document.querySelector('button');
+const calculateButton = document.getElementById('calculate-button');
 
 const initialize = () => {
   calculateButton.addEventListener('click', (e) => {
