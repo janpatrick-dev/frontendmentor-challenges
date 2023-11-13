@@ -544,6 +544,10 @@ input[type=number].appearance-none {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -564,6 +568,18 @@ input[type=number].appearance-none {
   z-index: 0;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -571,6 +587,14 @@ input[type=number].appearance-none {
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -583,6 +607,10 @@ input[type=number].appearance-none {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-0 {
@@ -599,6 +627,10 @@ input[type=number].appearance-none {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-11\/12 {
@@ -647,6 +679,10 @@ input[type=number].appearance-none {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -713,10 +749,6 @@ input[type=number].appearance-none {
   stroke-width: 4;
 }
 
-.stroke-3 {
-  stroke-width: 3;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -753,8 +785,20 @@ input[type=number].appearance-none {
   font-weight: 800;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-tight {
@@ -775,6 +819,11 @@ input[type=number].appearance-none {
   color: rgb(124 58 237 / var(--tw-text-opacity));
 }
 
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
@@ -789,7 +838,108 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+.invalid\:border-red-500:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.invalid\:border-red-300:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
+}
+
+.invalid\:border-red-400:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
+.invalid\:text-red-300:invalid {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
+}
+
+.invalid\:text-red-400:invalid {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.hover\:bg-slate-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.focus\:border-none:focus {
+  border-style: none;
+}
+
+.focus\:border-black:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.focus\:border-violet-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(139 92 246 / var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:outline-0:focus {
+  outline-width: 0px;
+}
+
+.group:invalid .group-invalid\:border-red-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
+}
+
+.peer:invalid ~ .peer-invalid\:visible {
+  visibility: visible;
+}
+
+.peer:invalid ~ .peer-invalid\:block {
+  display: block;
+}
+
+.peer:invalid ~ .peer-invalid\:border-red-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
+}
+
+.peer:invalid ~ .peer-invalid\:text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
+}
+
+.peer:invalid ~ .peer-invalid\:text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
+  .sm\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sm\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sm\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .sm\:w-8 {
     width: 2rem;
   }
@@ -798,16 +948,8 @@ body {
     align-items: flex-end;
   }
 
-  .sm\:stroke-4 {
-    stroke-width: 4;
-  }
-
   .sm\:stroke-2 {
     stroke-width: 2;
-  }
-
-  .sm\:stroke-3 {
-    stroke-width: 3;
   }
 
   .sm\:p-12 {
