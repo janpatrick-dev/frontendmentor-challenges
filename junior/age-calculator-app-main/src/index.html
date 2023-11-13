@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body class="h-screen bg-gray-200 flex flex-col justify-center items-center">
+
+  <main class="w-11/12 max-w-5xl px-6 py-12 sm:p-12 bg-white rounded-3xl rounded-br-10xl">
+    <div class="w-full max-w-sm flex justify-evenly items-center gap-4">
+      <label class="flex flex-col max-w-none">
+        <span class="text-gray-500 uppercase tracking-widest text-xs mb-1">Day</span>
+        <input type="number" placeholder="DD" class="w-full border-solid border-1 border-gray-200 p-3 rounded-lg appearance-none text-xl">
+      </label>
+    
+      <label class="flex flex-col">
+        <span class="text-gray-500 uppercase tracking-widest text-xs mb-1">Month</span>
+        <input type="number" placeholder="MM" class="w-full border-solid border-1 border-gray-200 p-3 rounded-lg appearance-none text-xl">
+      </label>
+    
+      <label class="flex flex-col">
+        <span class="text-gray-500 uppercase tracking-widest text-xs mb-1">Year</span>
+        <input type="number" placeholder="YYYY" class="w-full border-solid border-1 border-gray-200 p-3 rounded-lg appearance-none text-xl">
+      </label>
+    </div>
+    
+    <div class="text-center relative flex flex-col justify-center items-center sm:items-end my-8">
+      <span class="block absolute top-1/2 z-0 w-full h-0.5 bg-gray-200"></span>
+      <span class="inline-block w-16 h-16 relative z-1 rounded-full bg-violet-600">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 sm:w-8 stroke-4 sm:stroke-2 rounded-full z-2" 
+          viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
+        </svg>
+      </span>
+    </div>
+
+    
+    <div class="leading-tight">
+      <p class="text-5.25xl sm:text-7xl font-extrabold"><i><span class="text-violet-600">--</span> years</i></p>
+      <p class="text-5.25xl sm:text-7xl font-extrabold"><i><span class="text-violet-600">--</span> months</i></p>
+      <p class="text-5.25xl sm:text-7xl font-extrabold"><i><span class="text-violet-600">--</span> days</i></p>
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
